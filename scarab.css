@@ -1,0 +1,22 @@
+/*display of the board holder*/
+#my_holder {
+    background-image: url("../graphics_data/scrabble-tile-holder-406774_640.png");
+    background-repeat: no-repeat;
+    margin-left: auto;
+    margin-right: auto;
+    width: 750px;
+    height: 200px;
+}
+/*changes the size of the brics*/
+#bric_list {
+    margin-left: auto;
+    margin-right: auto;
+    width: 680px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+/*changes the size of the letters*/
+.letter {
+    max-width: 80px;
+    height: 90px;
+}

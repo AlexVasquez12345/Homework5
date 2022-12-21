@@ -1,0 +1,56 @@
+<!--Alex Vasquez-->
+<!--To be quite honest with you grader, I struggled with this assignment a bit. I tried my best
+to write the functions needed to finish the assignment in the js files. Any partial credit would be
+appreciated, thank you.-->
+<!--Links: 
+https://jqueryui.com/droppable/
+https://stackoverflow.com/questions/432174/how-to-store-arbitrary-data-for-some-html-tags
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Scrabble</title>
+    <link rel="stylesheet" href="css/scarab.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  </head>
+  <body>
+    <main>
+        <h1 class = "text-center">Scrabble</h1>
+        <form> 
+            <button type = "button" onclick="return next_word()">Next Word</button>
+            <button type = "button" onclick="return start_over()">Start Over</button>
+        </form>
+
+        <div id = "bric_list">
+        <table>
+            <tr>
+                <td><img id = "bric1" class = "bric" title = "blank" src="graphics_data/blank_bric.png"></td>
+                <td><img id = "bric2" class = "bric" title = "double_word1" src="graphics_data/word_combo.png"></td>
+                <td><img id = "bric3" class = "bric" title = "blank" src="graphics_data/blank_bric.png"></td>
+                <td><img id = "bric4" class = "bric" title = "blank" src="graphics_data/blank_bric.png"></td>
+                <td><img id = "bric5" class = "bric" title = "blank" src="graphics_data/blank_bric.png"></td>
+                <td><img id = "bric6" class = "bric" title = "double_word2" src="graphics_data/word_combo.png"></td>
+                <td><img id = "bric7" class = "bric" title = "blank" src="graphics_data/blank_bric.png"></td>
+            </tr>
+        </table>
+        </div>
+        <span>Word Score: </span>
+        <br>
+        <span>Total Score: </span>
+
+        <div id="my_holder">
+          <img data-letter="A" id = "first_letter" class = "letter" src = "graphics_data/Scrabble_Tiles/Scrabble_Tile_A.jpg">
+          <img data-letter="B" id = "second_letter" class = "letter" src = "graphics_data/Scrabble_Tiles/Scrabble_Tile_B.jpg">
+          <img data-letter="C" id = "third_letter" class = "letter" src = "graphics_data/Scrabble_Tiles/Scrabble_Tile_C.jpg">
+          <img data-letter="D" id = "fourth_letter" class = "letter" src = "graphics_data/Scrabble_Tiles/Scrabble_Tile_D.jpg">
+          <img data-letter="E" id = "fifth_letter" class = "letter" src = "graphics_data/Scrabble_Tiles/Scrabble_Tile_E.jpg">
+          <img data-letter="F" id = "sixth_letter" class = "letter" src = "graphics_data/Scrabble_Tiles/Scrabble_Tile_F.jpg">
+          <img data-letter="G" id = "seventh_letter" class = "letter" src = "graphics_data/Scrabble_Tiles/Scrabble_Tile_G.jpg">
+        </div>
+    </main>
+    <script src="js/scarab.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    </body>
+    </html>
